@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #9197ae;
+  font-family: "Kanit", sans-serif;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  padding: 50px 40px;
+  background-color: #031927;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Heading section */
+
+.to-do-heading {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%);
+  margin-top: 50px;
+  color: #031927;
+  letter-spacing: 2px;
+}
+
+/* Task Section */
+
+.add-task {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-task-input {
+  border: 0;
+  background-color: #031927;
+  font-size: 25px;
+  color: #9197ae;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.new-task-input:focus {
+  outline-width: 0;
+}
+
+.add-button {
+  cursor: pointer;
+  border: 0;
+  background-color: #031927;
+  color: #9197ae;
+  font-size: 15px;
+  font-family: "Kanit", sans-serif;
+}
+
+.task {
+  display: flex;
+  font-size: 25px;
+  margin: 20px 0px 0px 5px;
+}
+
+.task p {
+  margin-left: 15px;
+}
+
+.check-box {
+  width: 15px;
+  cursor: pointer;
+}
+
+.task-list {
+  overflow-y: auto;
+  max-height: 350px;
+  letter-spacing: 1.5px;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  color: white;
+  margin-top: 15px;
+}
+
+/* Clear Section */
+
+.clear-section {
+  margin-top: 30px;
+  margin-bottom: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#clear-all {
+  padding: 10px;
+  color: #9197ae;
+  background-color: #031927;
+  border: 0.5px solid #9197ae;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 300ms;
+}
+
+#clear-all:hover {
+  color: white;
+  background-color: red;
+  border: 0.5px solid red;
+}
+
+
+/* Special effects */
+
+.striked {
+  text-decoration: line-through;
+  opacity: 20%;
+}
+
+.highlight {
+  border-radius: 15px;
+  box-shadow: 0px 0px 7.5px #9197ae;
+}
